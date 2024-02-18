@@ -11,7 +11,7 @@
 def saludar():
     nombre = input("Por favor, ingresa tu nombre: ")
     edad = input("Por favor, ingresa tu edad: ")
-    print(f"\nHola {nombre}, gracias por proporcionar tus datos. Tienes {edad} años.\n")
+    print(f"\nHola {nombre}, un placer saludarte. Tienes {edad} años.\n")
 
 def realizar_operacion():
     try:
@@ -67,7 +67,7 @@ def mostrar_alumnos(lista_estudiantes, aprobado=True):
     for estudiante in lista_estudiantes:
         for curso in estudiante["cursos"]:
             promedio_curso = calcular_promedio(curso["notas"])
-            if (promedio_curso >= 6.0 and aprobado) or (promedio_curso < 6.0 and not aprobado):
+            if (promedio_curso >= 11.0 and aprobado) or (promedio_curso < 11.0 and not aprobado):
                 print(f"Nombre: {estudiante['nombre']}, Curso: {curso['nombre_curso']}, Promedio: {promedio_curso}")
 
 def obtener_mayor():
@@ -118,4 +118,4 @@ def main():
             print("Opción inválida. Por favor, seleccione una opción válida.")
 
 if __name__ == "__main__":
-    main() 
+    main()
